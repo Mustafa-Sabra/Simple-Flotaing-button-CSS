@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./css/all.css" />
+  <link rel="stylesheet" href="./css/Floating Action Button.css" />
+  <title>Floating Action Button</title>
+</head>
+
+<body>
+  <div class="menu">
+    <span class="button" onclick="toggleActive()"><i class="fas fa-plus"></i></span>
+    <ul>
+      <li><i class="fab fa-facebook-f"></i>Share To Facebook</li>
+      <li><i class="fab fa-twitter"></i>Share To Twitter</li>
+      <li><i class="fab fa-instagram"></i>Share To Instagram</li>
+      <li><i class="fab fa-whatsapp"></i>Share To Whatsapp</li>
+    </ul>
+  </div>
+  <script>
+    let btn = document.querySelector(".button");
+    function toggleActive() {
+      btn.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
